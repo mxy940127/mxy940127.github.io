@@ -8,6 +8,7 @@ cache:
         - node_modules # 缓存不经常更改的内容
 
 before_install:
+    - npm install g hexo-cli
     - export TZ='Asia/Shanghai' # 更改时区
 
 install:
@@ -15,20 +16,22 @@ install:
 
 script:
   - hexo clean  #清除
-  - hexo g  #生成
+  - hexo generate  #生成
 
 after_script:
-  - git clone https://${GH_REF} .deploy_git  # GH_REF是最下面配置的仓库地址
-  - cd .deploy_git
-  - git checkout master
-  - cd ../
-  - mv .deploy_git/.git/ ./public/   # 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit
-  - cd ./public
+#  - git clone https://${GH_REF} .deploy_git  # GH_REF是最下面配置的仓库地址
+#  - cd .deploy_git
+#  - git checkout master
+#  - cd ../
+#  - mv .deploy_git/.git/ ./public/   # 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit
+#  - cd ./public
   - git config user.name "mxy940127"  #修改name
   - git config user.email "mxy134718@gmail.com"  #修改email
-  - git add .
-  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"  # 提交记录包含时间 跟上面更改时区配合
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master  #gh_token是在Travis中配置环境变量的名称
+#  - git add .
+#  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"  # 提交记录包含时间 跟上面更改时区配合
+#  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master  #gh_token是在Travis中配置环境变量的名称
+  - sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
+  - hexo deploy
 
 branches:
   only:
