@@ -70,6 +70,12 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+algolia:
+  applicationID: DGR3JE7LUX
+  apiKey: 45d88abcd727208201ee22f355dae57f
+  indexName: 'indexName'
+  chunkSize: 5000
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
