@@ -1049,10 +1049,10 @@ vendors:
 
   # Gitalk
   # Example:
-  # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
-  # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-  gitalk_js:
-  gitalk_css:
+   gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
+   gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
+#  gitalk_js:
+#  gitalk_css:
 
   # Algolia Search
   # Example:
