@@ -3,19 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Eric
+title: Eric's Blog
 subtitle:
-description:
-keywords:
+description: Carpe Diem
+keywords: 博客
 author: Eric Miao
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
+
+# abbrlink config
+abbrlink:
+  alg: crc16 #support crc16(default) and crc32
+  rep: hex #support dec(default) and hex
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://mxy940127.github.io
+url: http://blog.jygenius.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: p/:abbrlink.html
 permalink_defaults:
 
 # Directory
@@ -73,8 +78,9 @@ pagination_dir: page
 algolia:
   applicationID: DGR3JE7LUX
   apiKey: 45d88abcd727208201ee22f355dae57f
-  indexName: 'indexName'
+  indexName: 'eric'
   chunkSize: 5000
+
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

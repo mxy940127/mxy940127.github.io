@@ -70,15 +70,15 @@ footer:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
 
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -89,7 +89,7 @@ footer:
     # The full num of gongan beian.
     gongan_num:
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
-    gongan_icon_url:
+    gongan_icon_url: /images/beian_logo.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
@@ -98,9 +98,9 @@ footer:
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  sidebar: false
-  post: false
-  language:
+  sidebar: true
+  post: true
+  language: deed.zh
 
 
 # ---------------------------------------------------------------
@@ -108,7 +108,7 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Disable Baidu transformation on mobile devices.
-disable_baidu_transformation: false
+disable_baidu_transformation: true
 
 # Set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
@@ -116,11 +116,11 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
 exturl: false
@@ -142,7 +142,7 @@ yandex_site_verification:
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -158,8 +158,8 @@ baidu_push: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -272,8 +272,8 @@ sidebar:
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
   enable: false
-  #service: chatra
-  #service: tidio
+#  service: chatra
+#  service: tidio
   icon: comment # Icon name in Font Awesome, set false to disable icon.
   text: Chat # Button text, change it as you wish.
 
@@ -318,7 +318,7 @@ symbols_count_time:
   wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Wechat Subscriber
 wechat_subscriber:
@@ -330,13 +330,13 @@ wechat_subscriber:
 reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
-  enable: false
+  enable: ture
   animation: false
-  #comment: Donate comment here.
+  #comment:
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.jpg
+#  alipay: /images/alipay.jpg
   #bitcoin: /images/bitcoin.png
 
 # Related popular posts
@@ -457,9 +457,9 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
-  title: Follow me on GitHub
+  enable: ture
+  permalink: https://github.com/mxy940127
+  title: Welcome to my GitHub ヾ(●´∀｀●)
 
 
 # ---------------------------------------------------------------
@@ -600,10 +600,10 @@ quicklink:
 # Multiple Comment System Support
 comments:
   # Available values: tabs | buttons
-  style: tabs
+  style: buttons
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | facebook_comments_plugin | gitalk | livere | valine | vkontakte
-  active:
+  active: gitalk
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Modify texts or order for any navs, here are some examples.
@@ -650,9 +650,9 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+  appid: RcDRGwA8EdBM6FrPxwWslODM-gzGzoHsz
+  appkey: AtVgiMegLTMGnY8yfLFXjxBy
   notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
@@ -720,13 +720,13 @@ vkontakte_api:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
-  id:     # <app_id>
+  enable: true
+  id:     21378
   color:  fc6423
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+add_this_id: ra-5d9ed4f45aa47d12
 
 
 # ---------------------------------------------------------------
@@ -735,7 +735,7 @@ add_this_id:
 # ---------------------------------------------------------------
 
 # Baidu Analytics
-baidu_analytics: # <app_id>
+baidu_analytics: 7af78f1349af779e84039b9096c6359a
 
 # Growingio Analytics
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -743,7 +743,7 @@ growingio_analytics: # <project_id>
 
 # Google Analytics
 google_analytics:
-  tracking_id: # <app_id>
+  tracking_id: UA-149772477-1
   localhost_ignored: true
 
 # CNZZ count
@@ -1043,9 +1043,9 @@ vendors:
 
   # Valine
   # Example:
-  # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
+   valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
   # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
-  valine:
+#  valine:
 
   # Gitalk
   # Example:
