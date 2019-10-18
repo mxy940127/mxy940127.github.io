@@ -90,13 +90,14 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://gh_token@github.com/mxy940127/mxy940127.github.io
-  branch: master
+  - type: git
+    repo: https://gh_token@github.com/mxy940127/mxy940127.github.io
+    branch: master
+  - type: baidu_url_submitter
 
 
-#baidu_url_submit:
-#  count: 1
-#  host: blog.jygenius.cn
-#  token: baidu_token
-#  path: baidu_urls.txt
+baidu_url_submit:
+  count: 1
+  host: blog.jygenius.cn
+  token: baidu_token
+  path: baidu_urls.txt
