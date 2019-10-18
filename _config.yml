@@ -94,9 +94,6 @@ deploy:
     repo: https://gh_token@github.com/mxy940127/mxy940127.github.io
     branch: master
   - type: baidu_url_submitter
-  - type: git
-    repo:
-      coding: git@git.coding.net:ericmxy/ericmxy.git,master
 
 
 baidu_url_submit:
