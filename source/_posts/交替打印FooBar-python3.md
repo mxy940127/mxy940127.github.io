@@ -114,4 +114,4 @@ class FooBar:
 执行用时 :104 ms, 在所有 python3 提交中击败了85.40%的用户  
 内存消耗 :16.1 MB, 在所有 python3 提交中击败了100.00%的用户  
 
-![avatar](/交替打印FooBar-python3/print-foobar-alternately.png)
+![avatar](/images/print-foobar-alternately.png)
