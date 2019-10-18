@@ -10,6 +10,7 @@ cache:
 before_install:
     - npm install g hexo-cli
     - export TZ='Asia/Shanghai' # 更改时区
+    - export HEXO_ALGOLIA_INDEXING_KEY="45d88abcd727208201ee22f355dae57f"
 
 install:
   - npm install  #安装hexo及插件
