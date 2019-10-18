@@ -57,6 +57,13 @@ public class Foo {
 
 你看到的输入格式主要是为了确保测试的全面性。
 
+
+#### 转载
+来源：力扣（LeetCode）  
+链接：https://leetcode-cn.com/problems/print-foobar-alternately  
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+
 ### 解题
 初始化代码
 ```python
